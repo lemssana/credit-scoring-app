@@ -1,7 +1,7 @@
 # Credit Risk Scoring & ML Model
 
 Проект по кредитному скорингу для оценки вероятности дефолта заемщика на основе финансовых и демографических данных.
-
+https://credit-scoring-app-atox3h2zxrwpdmpe5i2lt8.streamlit.app
 ## Стек технологий
 * Python, Pandas, Scikit-Learn, Joblib
 * Random Forest Classifier
