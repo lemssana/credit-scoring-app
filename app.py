@@ -43,7 +43,7 @@ if st.button("Оценить риск"):
 
     st.subheader("Объяснение решения модели (SHAP)")
     
-    st.subheader("Объяснение решения модели (SHAP)")
+   
     
     # Вычисление SHAP-значений для текущего клиента (берем срез для класса 1)
     explainer = shap.TreeExplainer(model)
