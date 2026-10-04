@@ -43,10 +43,13 @@ if st.button("Оценить риск"):
 
     st.subheader("Объяснение решения модели (SHAP)")
     
-    # Вычисление SHAP-значений для текущего клиента
+    st.subheader("Объяснение решения модели (SHAP)")
+    
+    # Вычисление SHAP-значений для текущего клиента (берем срез для класса 1)
     explainer = shap.TreeExplainer(model)
     shap_values = explainer(input_data)
     
     fig, ax = plt.subplots(figsize=(8, 4))
-    shap.plots.waterfall(shap_values[0], max_display=5, show=False)
+    # Передаем shap_values для класса 1
+    shap.plots.waterfall(shap_values[0, :, 1], max_display=5, show=False)
     st.pyplot(fig)
